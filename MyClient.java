@@ -4,6 +4,19 @@ import java.lang.reflect.Executable;
 import java.net.*;
 import java.util.Scanner;
 
+/*
+
+    Class MyClient
+    Allows a user to enter a chat room located on local host, port 6666
+
+    Args: 
+        Arg[0] - User Name for the user to be used in the chat room
+    Returns:
+        Exit Code 0 - program terminated
+
+    To leave the chat room, the user can type "exit"
+
+*/
 public class MyClient {
     public static boolean close = false;
     public static void main(String[] args) throws IOException {

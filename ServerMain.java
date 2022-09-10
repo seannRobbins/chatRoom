@@ -8,7 +8,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
+/*
 
+    Class ServerMain
+        This class is the interface that connects users to the server
+        It is a thread that continuously waits for new connections.
+    
+    Parameters:
+        None
+
+    Returns: void
+
+*/
 public class ServerMain {
     public static void main(String[] args) throws IOException {
         HashMap<String, DataInputStream> userInputs = new HashMap<>();

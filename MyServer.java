@@ -3,7 +3,21 @@ import java.net.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/*
 
+    Class MyServer
+        This class deciphers who users messages are sent to.
+        Each user instantiates their own server thread
+    
+    Parameters:
+        user: the name of the user who owns this thread
+        dout: a hashmap of users to their data output stream
+        din: the input stream of the user
+        socket: the socket of the user
+
+    Returns: void
+
+*/
 public class MyServer extends Thread {
     private HashMap<String, DataOutputStream> dout;
     private DataInputStream din;
